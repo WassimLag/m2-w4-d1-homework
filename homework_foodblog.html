@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Food Blog</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <aside id="leftside"></aside>
+    <aside id="rightside"></aside>
+    <div id="container">
+        <header><foodblog></foodblog></header>
+        <main>
+            <aside id="photos">
+                <img src="images/chili.jpg" alt="White Chicken Chili" width="180">
+            </aside>
+            <comments></comments>
+            <section id="blogposts">
+                <div class="post">
+                    <span class="author">{{ obj1.author }}</span> — 
+                    <span class="date">{{ obj1.date }}</span>
+                    <span class="reply">{{ reply }}</span>
+                    <p>{{ obj1.paragraph }}</p>
+                </div>
+                <div class="post">
+                    <span class="author">{{ obj2.author }}</span> — 
+                    <span class="date">{{ obj2.date }}</span>
+                    <span class="reply">{{ reply }}</span>
+                    <p>{{ obj2.paragraph }}</p>
+                </div>
+                <div class="post">
+                    <span class="author">{{ obj3.author }}</span> — 
+                    <span class="date">{{ obj3.date }}</span>
+                    <span class="reply">{{ reply }}</span>
+                    <p>{{ obj3.paragraph }}</p>
+                </div>
+                <div class="post">
+                    <span class="author">{{ obj4.author }}</span> — 
+                    <span class="date">{{ obj4.date }}</span>
+                    <span class="reply">{{ reply }}</span>
+                    <p>{{ obj4.paragraph }}</p>
+                </div>  
+            </section>
+        </main>
+        <footer>&copy; Copyright FOOD BLOG</footer>
+    </div>
+</body>
+</html>
